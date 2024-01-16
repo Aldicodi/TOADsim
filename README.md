@@ -35,10 +35,12 @@ The draw_TOAD() function draws the triangle that represents TOAD based on the in
 The COM_Calc() function is in my opinion the most complex and interesting function. Its purpose is to find the offset of the center of mass from the origin based on the three dynamic point masses (propellant tanks) and the rod mass (frame). It takes the characteristics of these elements and uses an equation I derived by setting up a torque problem to find the center of mass. Here are some pictures of the process:
 
 Initial setup of the problem
+
 ![Setup](README_images/problemSetup.jpg)
+
 Simplification into a quadratic that can be solved with code
+
 ![Simplification](README_images/equationSimplification.jpg)
-The function then returns the distance between the origin and the center of mass, which is referenced extensively throughout the calculations.
 
 The function then returns the distance between the origin and the center of mass, which is referenced extensively throughout the calculations.
 
@@ -59,10 +61,15 @@ Keep in mind that when using the arrows, the vehicle will gain or lose angular m
 ## Screenshots
 
 Mass inputs
+
 ![Terminal inputs](README_images/terminalInputs.png)
+
 Error checking
+
 ![Error checking message](README_images/errorChecking.png)
+
 In simulation
+
 ![Simulation running](README_images/simulationRunning.png)
 
 ## Dependencies
